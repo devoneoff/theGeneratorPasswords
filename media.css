@@ -1,0 +1,74 @@
+@media ( max-width: 880px ) {
+    .form_part:nth-child(1),
+    .form_part:nth-child(2) {
+        width: 50%;
+    }
+}
+@media ( max-width: 680px ) {
+    form {
+        width: 100%;
+        background-color: rgba( 0, 0, 0, .68 );
+        border-radius: 40px;
+        padding: 40px;
+        backdrop-filter: blur( 45px );
+        margin-bottom: 40px;
+    }
+    .form_content {
+        flex-direction: column;
+    }
+    .form_part:nth-child(1),
+    .form_part:nth-child(2) {
+        width: 100%;
+    }
+    .form_part:nth-child(1) {
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .inputs_type {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .input_h {
+        width: 200px;
+    }
+    .form_part:nth-child(2) {
+        margin-top: 50px;
+    }
+    .input_submit {
+        width: 100%;
+        justify-content: center;
+    }
+    h1 {
+        font-size: 4.6vh;
+    }
+}
+
+@media ( max-width: 540px ) {
+    h1 {
+        font-size: 3.6vh;
+    }
+    body {
+        padding: 20px;
+    }
+    .result_password {
+        font-size: 20px !important;
+    }
+    .form_part:nth-child(2) {
+        margin-top: 40px;
+    }
+    form {
+        padding: 30px;
+    }
+}
+@media ( max-width: 410px ) {
+    .inputs_num {
+        height: 50px;
+    }
+    .result_password {
+        font-size: 18px !important;
+    }
+    .form_part:nth-child(2) {
+        margin-top: 30px;
+    }
+}
