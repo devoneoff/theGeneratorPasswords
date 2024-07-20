@@ -161,7 +161,7 @@ const generatePassword = function() {
     copyBtn.classList.remove('noCopyBtn');
 
     document.querySelector('.alertCopy').classList.remove('alert');
-    
+    document.querySelector('.result_passwordBlock').classList.remove('alertBlock');
 };
 
 
@@ -175,6 +175,7 @@ const copyText = function() {
         navigator.clipboard.writeText(passwordText)
             .then(() => {
                 document.querySelector('.alertCopy').classList.add('alert');
+                document.querySelector('.result_passwordBlock').classList.add('alertBlock');
                 copyBtn.removeEventListener('click', handleClick);
             })
     };
